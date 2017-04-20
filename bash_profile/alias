@@ -1,4 +1,5 @@
-# MY ALIASES ###################################
+# JOHN's ALIASES ##########################################
+
 alias ls='ls -GFh'           # format output: color, filetype and human readable
 alias ll="ls -hartl"         # list full info
 alias lsc="clear; ls -lh"    # list and clear
@@ -28,4 +29,3 @@ alias reset_mac="sudo ifconfig en1 ether 4a:00:01:ce:e0:f0"
 
 alias pygraph="pycallgraph graphviz "
 alias pyline="kernprof -l -v "
-
