@@ -1,8 +1,8 @@
-rm ~/.bash_profile
-rm ~/.gitconfig
-rm ~/.gitignore_global
-rm ~/.vimrc
-rm ~/.pythonstartup
+rm -i ~/.bash_profile
+rm -i ~/.gitconfig
+rm -i ~/.gitignore_global
+rm -i ~/.vimrc
+rm -i ~/.pythonstartup
 
 ln -sv ~/.dotfiles/.bash_profile ~/.bash_profile
 ln -sv ~/.dotfiles/.gitconfig ~/.gitconfig
