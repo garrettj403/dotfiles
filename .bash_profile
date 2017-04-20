@@ -4,6 +4,11 @@ if [ -r $HOME/.bashrc ] ; then
   . $HOME/.bashrc
 fi
 
+# Computer specific directory aliases
+if [ -f ~/.bash_paths ]; then
+    . ~/.bash_paths
+fi
+
 # IMPORTANT DIRS ###############################
 alias gdrive="cd ~/GoogleDrive"
 alias proj="cd ~/GoogleDrive/Projects"
@@ -20,6 +25,7 @@ alias lshf="lsh | grep -v /" # list hidden files
 
 alias c="clear"
 
+alias home="cd ~"
 alias back="cd ..; lsc"
 alias ..="cd .."
 alias ...="cd ../.."
@@ -37,6 +43,9 @@ alias git_rm_all="git ls-files --deleted -z | xargs -0 git rm"
 # Change MAC address for airport WiFi
 alias spoof_mac="sudo ifconfig en1 ether 00:e2:e3:e4:e5:e6"  
 alias reset_mac="sudo ifconfig en1 ether 4a:00:01:ce:e0:f0"
+
+alias pygraph="pycallgraph graphviz "
+alias pyline="kernprof -l -v "
 
 # PYTHON PATH ##################################
 export PYTHONPATH="/Users/johngarrett/GoogleDrive/Projects/misc:$PYTHONPATH"
