@@ -1,28 +1,44 @@
 # JOHN’s BASH PROFILE ##########################
+
 if [ -r $HOME/.bashrc ] ; then
   . $HOME/.bashrc
 fi
 
-# Computer specific directory aliases ##########
+# COMPUTER SPECIFIC PATHS ######################
+
+# Directory aliases 
 if [ -f ~/.bash_paths ]; then
     . ~/.bash_paths
 fi
 
-# Computer specific python paths ###############
+# Python paths 
 if [ -f ~/.python_paths ]; then
     . ~/.python_paths
 fi 
 
-# My aliases ###################################
+# Python startup 
+if [ -f ~/.pythonstartup ]; then
+    export PYTHONSTARTUP="$HOME/.pythonstartup"
+fi
+
+# IMPORT FROM DOTFILES FOLDER ##################
+
+# My aliases 
 if [ -f ~/.dotfiles/bash_profile/alias ]; then
     . ~/.dotfiles/bash_profile/alias
 fi
 
-# Python startup ###############################
-export PYTHONSTARTUP="$HOME/.pythonstartup"
+# My paths 
+if [ -f ~/.dotfiles/bash_profile/paths ]; then
+    . ~/.dotfiles/bash_profile/paths
+fi
 
-# Fancy terminal ###############################
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[37m\]\w$\[\033[m\] "
-export CLICOLOR=1
-export LSCOLORS=CxFxBxDxGxegedabagacad
+# My functions 
+if [ -f ~/.dotfiles/bash_profile/functions ]; then
+    . ~/.dotfiles/bash_profile/functions
+fi
 
+# My options
+if [ -f ~/.dotfiles/bash_profile/options ]; then
+    . ~/.dotfiles/bash_profile/options
+fi

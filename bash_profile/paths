@@ -1,0 +1,8 @@
+# JOHN's PATH ALIASES #
+# These are only basic paths that are the same on all my machines
+
+alias home="cd ~"
+alias dl="cd ~/Downloads"
+alias doc="cd ~/Documents"
+alias docs="doc"
+alias dot="cd ~/.dotfiles"
