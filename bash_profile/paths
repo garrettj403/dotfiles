@@ -6,3 +6,5 @@ alias dl="cd ~/Downloads"
 alias doc="cd ~/Documents"
 alias docs="doc"
 alias dot="cd ~/.dotfiles"
+
+export PATH="$HOME/.dotfiles/git/bin:$PATH"
