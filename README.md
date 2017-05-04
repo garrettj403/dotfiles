@@ -1,6 +1,6 @@
 # My Dotfiles
 
-I have two computer running macOS. I use these dotfiles to make them operate the same way. I pulled the contents of this directory from all over the internet. I try to refer to the source in the comment whenever I can.
+I have two computer running macOS. I use these dotfiles to make them operate the same way. I pulled the contents of this directory from all over the internet. I try to refer to the resources that I used whenever I can.
 
 To download:
 ```bash
