@@ -1,25 +1,20 @@
-# JOHN’s BASH PROFILE ##########################
+# JOHN's BASH PROFILE ##########################
 
 if [ -r $HOME/.bashrc ] ; then
   . $HOME/.bashrc
 fi
 
-# COMPUTER SPECIFIC PATHS ######################
+# PATHS SPECIFIC TO MACHINE ####################
 
 # Directory aliases 
 if [ -f ~/.bash_paths ]; then
     . ~/.bash_paths
 fi
 
-# Python paths 
+# Python paths
 if [ -f ~/.python_paths ]; then
     . ~/.python_paths
 fi 
-
-# Python startup 
-if [ -f ~/.pythonstartup ]; then
-    export PYTHONSTARTUP="$HOME/.pythonstartup"
-fi
 
 # IMPORT FROM DOTFILES FOLDER ##################
 
@@ -41,4 +36,9 @@ fi
 # My options
 if [ -f ~/.dotfiles/bash_profile/options ]; then
     . ~/.dotfiles/bash_profile/options
+fi
+
+# Python startup 
+if [ -f ~/.pythonstartup ]; then
+    export PYTHONSTARTUP="$HOME/.pythonstartup"
 fi

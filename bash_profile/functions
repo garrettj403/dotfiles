@@ -1,4 +1,8 @@
-### EXTRACT COMPRESSED FILES ###
+# FUNCTIONS
+#
+# Useful functions taken from the internet
+
+# Extract compressed files 
 # From: urukrama, Ubuntuforums.org
 #
 function extract {	#universal extract

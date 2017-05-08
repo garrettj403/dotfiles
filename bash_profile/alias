@@ -1,45 +1,43 @@
+# ALIAS
+#
+# Aliases for common commands
 
-### SAFETY FIRST ###
+## Safety first ##
 alias del="rm -i"
 
-### LISTING FILES ###
+## Listing files ##
 alias ls='ls -GFh'           # format output: color, filetype and human readable
 alias ll="ls -hartl"         # list full info
 alias lsc="clear; ls -lh"    # list and clear
 alias lsh="ls -ld .?*"       # list hidden files and directories
 alias lshf="lsh | grep -v /" # list hidden files
 
-alias oepn="open"
-
-alias c="clear"
-
-alias hg='history | grep '
-
+## Moving around ##
 alias home="cd ~"
 alias back="cd ..; lsc"
 alias b="back"
 alias ..="cd .."
 alias ...="cd ../.."
+alias c="clear"
 
-alias g='grep -i'
-alias get='curl -OL'
-alias emacs_gui="/usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/emacs"
-alias md="grip -b "
-
+## Modifying bash profile ##
 alias sbp="source ~/.bash_profile"
 alias obp="open ~/.bash_profile"
+alias oepn="open"
 
-alias git_rm_all="git ls-files --deleted -z | xargs -0 git rm"
-
-alias pingtest="ping -c 5 google.com"
-
+## Open applications ##
 alias subl="open -a 'Sublime Text'"
 alias chrome="open -a 'Google Chrome'"
 
-# Change MAC address for airport WiFi
-alias spoof_mac="sudo ifconfig en1 ether 00:e2:e3:e4:e5:e6"  
-alias reset_mac="sudo ifconfig en1 ether 4a:00:01:ce:e0:f0"
-
-# Python profiling
+## Python profiling ##
 alias pygraph="pycallgraph graphviz "
 alias pyline="kernprof -l -v "
+
+## Misc commands ##
+alias hg='history | grep '
+alias g='grep -i'
+alias md="grip -b "
+alias get='curl -OL'
+alias emacs_gui="/usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/emacs"
+alias git_rm_all="git ls-files --deleted -z | xargs -0 git rm"
+alias pingtest="ping -c 5 google.com"
