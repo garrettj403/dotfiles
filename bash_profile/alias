@@ -41,3 +41,4 @@ alias get='curl -OL'
 alias emacs_gui="/usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/emacs"
 alias git_rm_all="git ls-files --deleted -z | xargs -0 git rm"
 alias pingtest="ping -c 5 google.com"
+alias search_python="find . -name "*.py" -print0 | xargs -0 grep -Rn"
