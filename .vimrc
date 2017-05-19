@@ -57,3 +57,12 @@ source $HOME/.vim/vimrc/plugin_configs.vim
 source $HOME/.vim/vimrc/plugins.vim
 source $HOME/.vim/vimrc/settings.vim
 source $HOME/.vim/vimrc/spelling.vim
+
+" this enables "visual" wrapping
+set wrap
+
+" this turns off physical line wrapping (ie: automatic insertion of newlines)
+set textwidth=0 wrapmargin=0
+
+" map double j tap to Escape
+imap jj <Esc>
