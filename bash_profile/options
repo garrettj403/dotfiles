@@ -6,7 +6,8 @@
 export GREP_OPTIONS='--color=auto'
 
 # Add colour to terminal
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[37m\]\w$\[\033[m\] "
+# export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[37m\]\w\[\033[m\] "
+export PROMPT_COMMAND='PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[37m\]$(python ~/.dotfiles/bash_profile/short_pwd.py)\[\033[m\]$ "'
 export CLICOLOR=1
 export LSCOLORS=CxFxBxDxGxegedabagacad
 
