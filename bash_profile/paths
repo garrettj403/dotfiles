@@ -1,0 +1,19 @@
+# PATHS
+#
+# Basic paths that are common to all my machines
+
+alias home="cd ~"
+alias dl="cd ~/Downloads"
+alias desk="cd ~/Desktop"
+alias doc="cd ~/Documents"
+alias docs="cd ~/Documents"
+alias dot="cd ~/.dotfiles"
+
+alias gd="cd ~/GoogleDrive"
+alias proj="cd ~/GoogleDrive/Projects"
+alias qmix="cd ~/GoogleDrive/Projects/QMix"
+alias qdata="cd ~/GoogleDrive/Projects/SISData"
+alias go="cd ~/GoogleDrive/Projects/GaussOpt"
+alias notes="cd ~/GoogleDrive/Notes"
+
+export PATH="$HOME/.dotfiles/git/bin:$PATH"

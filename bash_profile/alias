@@ -1,0 +1,44 @@
+# ALIAS
+#
+# Aliases for common commands
+
+## Safety first ##
+alias del="rm -i"
+
+## Listing files ##
+alias ls='ls -GFh'           # format output: color, filetype and human readable
+alias ll="ls -hartl"         # list full info
+alias lsc="clear; ls -lh"    # list and clear
+alias lsh="ls -ld .?*"       # list hidden files and directories
+alias lshf="lsh | grep -v /" # list hidden files
+
+## Moving around ##
+alias home="cd ~"
+alias back="cd ..; lsc"
+alias b="back"
+alias ..="cd .."
+alias ...="cd ../.."
+alias c="clear"
+
+## Modifying bash profile ##
+alias sbp="source ~/.bash_profile"
+alias obp="open ~/.bash_profile"
+alias oepn="open"
+
+## Open applications ##
+alias subl="open -a 'Sublime Text'"
+alias chrome="open -a 'Google Chrome'"
+
+## Python profiling ##
+alias pygraph="pycallgraph graphviz "
+alias pyline="kernprof -l -v "
+
+## Misc commands ##
+alias hg='history | grep '
+alias g='grep -i'
+alias md="grip -b "
+alias get='curl -OL'
+alias emacs_gui="/usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/emacs"
+alias git_rm_all="git ls-files --deleted -z | xargs -0 git rm"
+alias pingtest="ping -c 5 google.com"
+alias search_python="find . -name "*.py" -print0 | xargs -0 grep -Rn"
