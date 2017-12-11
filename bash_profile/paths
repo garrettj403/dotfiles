@@ -7,7 +7,7 @@ alias dl="cd ~/Downloads"
 alias desk="cd ~/Desktop"
 alias doc="cd ~/Documents"
 alias docs="doc"
-alias dot="cd ~/.dotfiles"
+alias dotfiles="cd ~/.dotfiles"
 
 alias proj="cd ~/Projects"
 alias qmix="cd ~/Projects/QMix"
@@ -15,3 +15,4 @@ alias qdata="cd ~/Projects/SISData"
 alias go="cd ~/Projects/GaussOpt"
 
 export PATH="$HOME/.dotfiles/git/bin:$PATH"
+export PATH="$HOME/Projects/QMix/bin:$PATH"
