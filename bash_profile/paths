@@ -6,8 +6,8 @@ alias home="cd ~"
 alias dl="cd ~/Downloads"
 alias desk="cd ~/Desktop"
 alias doc="cd ~/Documents"
-
 alias docs="cd ~/Documents"
+
 alias dot="cd ~/.dotfiles"
 
 alias gd="cd ~/GoogleDrive"
@@ -19,6 +19,8 @@ alias freq="cd ~/GoogleDrive/Projects/QMix/my-projects/frequency-multiplier"
 alias go="cd ~/GoogleDrive/Projects/GaussOpt"
 alias obs="cd ~/GoogleDrive/Projects/ObsWork"
 alias notes="cd ~/GoogleDrive/Notes"
+alias thesis="cd ~/GoogleDrive/Projects/Thesis"
+alias cv="cd ~/GoogleDrive/Projects/CV"
 
 export PATH="$HOME/.dotfiles/git/bin:$PATH"
 export PATH="$HOME/GoogleDrive/Projects/QMix/bin:$PATH"
