@@ -20,14 +20,24 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias c="clear"
 
+## Opening files ##
+alias oepn="open"
+alias poen="open" 
+alias eopn="open" 
+alias opne="open"
+alias eon="open" 
+
 ## Modifying bash profile ##
 alias sbp="source ~/.bash_profile"
 alias obp="open ~/.bash_profile"
-alias oepn="open"
 
 ## Open applications ##
 alias subl="open -a 'Sublime Text'"
 alias chrome="open -a 'Google Chrome'"
+alias excel="open -a 'Microsoft Excel'"
+alias word="open -a 'Microsoft Word'"
+alias pycharm="open -a 'PyCharm CE'"
+alias mendeley="open -a 'Mendeley Desktop'"
 
 ## Python profiling ##
 alias pygraph="pycallgraph graphviz "
@@ -39,10 +49,15 @@ alias g='grep -i'
 alias md="grip -b "
 alias get='curl -OL'
 alias emacs_gui="/usr/local/Cellar/emacs/24.5/Emacs.app/Contents/MacOS/emacs"
+alias emacs-gui="emacs_gui"
 alias git_rm_all="git ls-files --deleted -z | xargs -0 git rm"
+alias git-rm-all="git_rm_all"
 alias pingtest="ping -c 5 google.com"
 alias search_python="find . -not -path '*/\.*' -name '*.py' -print0 | xargs -0 grep -Rn "
 alias search-python="search_python"
 alias search_tex="find . -not -path '*/\.*' -name '*.tex' -print0 | xargs -0 grep -Rn "
+alias search-tex="search_tex"
 alias search_thesis="find "chp_*" -not -path '*/\.*' -name '*.tex' -print0 | xargs -0 grep -Rn "
-alias open-all-pdf="find . -iname '*.pdf' -exec open {} +"
+alias search-thesis="search_thesis"
+alias open_all_pdf="find . -iname '*.pdf' -exec open {} +"
+alias open-all-pdf="open_all_pdf"
