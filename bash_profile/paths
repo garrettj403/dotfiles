@@ -6,8 +6,8 @@ alias home="cd ~"
 alias dl="cd ~/Downloads"
 alias desk="cd ~/Desktop"
 alias doc="cd ~/Documents"
-
 alias docs="cd ~/Documents"
+
 alias dot="cd ~/.dotfiles"
 
 alias gd="cd ~/GoogleDrive"
