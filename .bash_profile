@@ -16,6 +16,11 @@ if [ -f ~/.python_paths ]; then
     . ~/.python_paths
 fi 
 
+# Anaconda path
+if [ -f ~/.anaconda ]; then
+    . ~/.anaconda
+fi
+
 # IMPORT FROM DOTFILES FOLDER ##################
 
 # My aliases 
