@@ -10,8 +10,8 @@ alias docs="cd ~/Documents"
 
 alias dot="cd ~/.dotfiles"
 
-alias gd="cd ~/GoogleDrive"
-alias gdrive="cd ~/GoogleDrive"
+alias gd="cd ~/Google\ Drive"
+alias gdrive="cd ~/Google\ Drive"
 alias proj="cd ~/Projects"
 alias qmix="cd ~/Projects/QMix"
 alias 230="cd ~/Projects/QMix/my-projects/230ghz-receiver"
